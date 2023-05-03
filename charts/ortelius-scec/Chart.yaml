@@ -10,5 +10,9 @@ keywords:
   - Supply Chain
   - Evidence Catalog
 type: application
-version: 11.0.0
+version: 11.0.2
 appVersion: 11.0.0
+dependencies:
+  - name: scec-domain
+    version: 11.0.16
+    repository: https://ortelius.github.io/scec-domain/
