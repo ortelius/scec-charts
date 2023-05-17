@@ -1,0 +1,26 @@
+apiVersion: v1
+entries:
+  ortelius-scec:
+  - apiVersion: v2
+    appVersion: 11.0.0
+    created: "2023-05-17T19:56:24.572475813Z"
+    dependencies:
+    - name: scec-domain
+      repository: https://ortelius.github.io/scec-domain/
+      version: 11.0.18
+    description: Ortelius v11 Supply Chain Evidence Catalog
+    digest: 2a67e610490e6377ea6805147e92fa4494cdb5959e4f9ccd68faa1c5bcdce603
+    home: https://www.ortelius.io
+    icon: https://ortelius.github.io/ortelius-charts/logo.png
+    keywords:
+    - Service Catalog
+    - Microservices
+    - SBOM
+    - Supply Chain
+    - Evidence Catalog
+    name: ortelius-scec
+    type: application
+    urls:
+    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.4/ortelius-scec-11.0.4.tgz
+    version: 11.0.4
+generated: "2023-05-17T19:56:24.572481813Z"
