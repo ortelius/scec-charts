@@ -3,7 +3,7 @@ entries:
   ortelius-scec:
   - apiVersion: v2
     appVersion: 11.0.0
-    created: "2023-05-19T16:05:53.587319577Z"
+    created: "2023-05-19T16:05:59.370596556Z"
     dependencies:
     - name: scec-app-tag
       repository: https://ortelius.github.io/scec-app-tag/
@@ -34,7 +34,7 @@ entries:
       version: 11.0.15
     - name: scec-scorecard
       repository: https://ortelius.github.io/scec-scorecard/
-      version: 11.0.14
+      version: 11.0.11
     - name: scec-textfile
       repository: https://ortelius.github.io/scec-textfile/
       version: 11.0.12
@@ -43,7 +43,7 @@ entries:
       version: 11.0.13
     - name: scec-usergroup
       repository: https://ortelius.github.io/scec-usergroup/
-      version: 11.0.13
+      version: 11.0.12
     - name: scec-validate-provenance
       repository: https://ortelius.github.io/scec-validate-provenance/
       version: 11.0.9
@@ -57,7 +57,7 @@ entries:
       repository: https://ortelius.github.io/scec-vulnerability/
       version: 11.0.18
     description: Ortelius v11 Supply Chain Evidence Catalog
-    digest: 6038bd9415ec2a1169b407730bc24e396a027b0376a35310d9322f47a1588e36
+    digest: fc316ac1ac6814fb73f0fd336546b8c0d551f4a89c7b318b59b5dd1c9461c338
     home: https://www.ortelius.io
     icon: https://ortelius.github.io/ortelius-charts/logo.png
     keywords:
@@ -69,8 +69,8 @@ entries:
     name: ortelius-scec
     type: application
     urls:
-    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.15/ortelius-scec-11.0.15.tgz
-    version: 11.0.15
+    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.13/ortelius-scec-11.0.13.tgz
+    version: 11.0.13
   - apiVersion: v2
     appVersion: 11.0.0
     created: "2023-05-18T18:33:55.913522234Z"
@@ -303,4 +303,4 @@ entries:
     urls:
     - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.4/ortelius-scec-11.0.4.tgz
     version: 11.0.4
-generated: "2023-05-19T16:05:53.584565031Z"
+generated: "2023-05-19T16:05:59.367323107Z"
