@@ -10,7 +10,7 @@ keywords:
 - Supply Chain
 - Evidence Catalog
 type: application
-version: 11.0.134
+version: 11.0.135
 appVersion: 11.0.0
 dependencies:
 - name: scec-app-tag
