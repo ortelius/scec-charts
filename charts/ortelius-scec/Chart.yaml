@@ -10,7 +10,7 @@ keywords:
 - Supply Chain
 - Evidence Catalog
 type: application
-version: 11.0.144
+version: 11.0.145
 appVersion: 11.0.0
 dependencies:
 - name: scec-app-tag
@@ -38,7 +38,7 @@ dependencies:
   version: 11.0.53
   repository: https://ortelius.github.io/scec-environment/
 - name: scec-group
-  version: 11.0.46
+  version: 11.0.49
   repository: https://ortelius.github.io/scec-group/
 - name: scec-scorecard
   version: 11.0.47
