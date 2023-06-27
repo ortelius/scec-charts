@@ -3,7 +3,7 @@ entries:
   ortelius-scec:
   - apiVersion: v2
     appVersion: 11.0.0
-    created: "2023-06-27T16:33:05.039596545Z"
+    created: "2023-06-27T16:33:08.899693184Z"
     dependencies:
     - name: scec-app-tag
       repository: https://ortelius.github.io/scec-app-tag/
@@ -34,7 +34,7 @@ entries:
       version: 11.0.54
     - name: scec-scorecard
       repository: https://ortelius.github.io/scec-scorecard/
-      version: 11.0.54
+      version: 11.0.48
     - name: scec-textfile
       repository: https://ortelius.github.io/scec-textfile/
       version: 11.0.54
@@ -43,7 +43,7 @@ entries:
       version: 11.0.52
     - name: scec-usergroup
       repository: https://ortelius.github.io/scec-usergroup/
-      version: 11.0.48
+      version: 11.0.42
     - name: scec-validate-provenance
       repository: https://ortelius.github.io/scec-validate-provenance/
       version: 11.0.50
@@ -57,7 +57,7 @@ entries:
       repository: https://ortelius.github.io/scec-vulnerability/
       version: 11.0.51
     description: Ortelius v11 Supply Chain Evidence Catalog
-    digest: 8120bae4b1140a1a51724c9b7bd648443e6f70d42039638ced1b4ac4b68be854
+    digest: 51cc8f20f9b4abed43fb2a61e1a4a340cee68f0b3b52c6d8ef1130bf3a58ad63
     home: https://www.ortelius.io
     icon: https://ortelius.github.io/ortelius-charts/logo.png
     keywords:
@@ -69,8 +69,8 @@ entries:
     name: ortelius-scec
     type: application
     urls:
-    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.173/ortelius-scec-11.0.173.tgz
-    version: 11.0.173
+    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.170/ortelius-scec-11.0.170.tgz
+    version: 11.0.170
   - apiVersion: v2
     appVersion: 11.0.0
     created: "2023-06-25T15:15:03.202344088Z"
@@ -1353,4 +1353,4 @@ entries:
     urls:
     - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.4/ortelius-scec-11.0.4.tgz
     version: 11.0.4
-generated: "2023-06-27T16:33:05.035525325Z"
+generated: "2023-06-27T16:33:08.896428322Z"
