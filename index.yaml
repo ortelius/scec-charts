@@ -3,7 +3,7 @@ entries:
   ortelius-scec:
   - apiVersion: v2
     appVersion: 11.0.0
-    created: "2023-07-12T14:55:26.551339905Z"
+    created: "2023-07-12T14:57:30.01067234Z"
     dependencies:
     - name: scec-app-tag
       repository: https://ortelius.github.io/scec-app-tag/
@@ -40,13 +40,13 @@ entries:
       version: 11.0.69
     - name: scec-user
       repository: https://ortelius.github.io/scec-user/
-      version: 11.0.64
+      version: 11.0.68
     - name: scec-usergroup
       repository: https://ortelius.github.io/scec-usergroup/
       version: 11.0.60
     - name: scec-validate-provenance
       repository: https://ortelius.github.io/scec-validate-provenance/
-      version: 11.0.62
+      version: 11.0.68
     - name: scec-validate-signing
       repository: https://ortelius.github.io/scec-validate-signing/
       version: 11.0.60
@@ -55,9 +55,9 @@ entries:
       version: 11.0.60
     - name: scec-vulnerability
       repository: https://ortelius.github.io/scec-vulnerability/
-      version: 11.0.66
+      version: 11.0.67
     description: Ortelius v11 Supply Chain Evidence Catalog
-    digest: 732e684691aff2ab539adcb23a4c94acfc758ea4ba66ef146cd60bfea1c3e586
+    digest: 21df02b34d556a2b8e89db261154cd6797c69e43d336538fd3d36948a82e6827
     home: https://www.ortelius.io
     icon: https://ortelius.github.io/ortelius-charts/logo.png
     keywords:
@@ -69,8 +69,8 @@ entries:
     name: ortelius-scec
     type: application
     urls:
-    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.243/ortelius-scec-11.0.243.tgz
-    version: 11.0.243
+    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.247/ortelius-scec-11.0.247.tgz
+    version: 11.0.247
   - apiVersion: v2
     appVersion: 11.0.0
     created: "2023-07-12T08:53:11.461064877Z"
@@ -2053,4 +2053,4 @@ entries:
     urls:
     - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.4/ortelius-scec-11.0.4.tgz
     version: 11.0.4
-generated: "2023-07-12T14:55:26.547830493Z"
+generated: "2023-07-12T14:57:30.007018177Z"
