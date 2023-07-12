@@ -3,6 +3,76 @@ entries:
   ortelius-scec:
   - apiVersion: v2
     appVersion: 11.0.0
+    created: "2023-07-12T14:54:45.58111661Z"
+    dependencies:
+    - name: scec-app-tag
+      repository: https://ortelius.github.io/scec-app-tag/
+      version: 11.0.73
+    - name: scec-appver
+      repository: https://ortelius.github.io/scec-appver/
+      version: 11.0.64
+    - name: scec-comp-tag
+      repository: https://ortelius.github.io/scec-comp-tag/
+      version: 11.0.65
+    - name: scec-compver
+      repository: https://ortelius.github.io/scec-compver/
+      version: 11.0.64
+    - name: scec-deployment
+      repository: https://ortelius.github.io/scec-deployment/
+      version: 11.0.64
+    - name: scec-deppkg
+      repository: https://ortelius.github.io/scec-deppkg/
+      version: 11.0.70
+    - name: scec-domain
+      repository: https://ortelius.github.io/scec-domain/
+      version: 11.0.18
+    - name: scec-environment
+      repository: https://ortelius.github.io/scec-environment/
+      version: 11.0.69
+    - name: scec-group
+      repository: https://ortelius.github.io/scec-group/
+      version: 11.0.68
+    - name: scec-scorecard
+      repository: https://ortelius.github.io/scec-scorecard/
+      version: 11.0.64
+    - name: scec-textfile
+      repository: https://ortelius.github.io/scec-textfile/
+      version: 11.0.69
+    - name: scec-user
+      repository: https://ortelius.github.io/scec-user/
+      version: 11.0.64
+    - name: scec-usergroup
+      repository: https://ortelius.github.io/scec-usergroup/
+      version: 11.0.60
+    - name: scec-validate-provenance
+      repository: https://ortelius.github.io/scec-validate-provenance/
+      version: 11.0.62
+    - name: scec-validate-signing
+      repository: https://ortelius.github.io/scec-validate-signing/
+      version: 11.0.60
+    - name: scec-validate-user
+      repository: https://ortelius.github.io/scec-validate-user/
+      version: 11.0.60
+    - name: scec-vulnerability
+      repository: https://ortelius.github.io/scec-vulnerability/
+      version: 11.0.66
+    description: Ortelius v11 Supply Chain Evidence Catalog
+    digest: 112e4c80905b9f62770fb1e8c05009e45a897c9b3ae906b62512944001439ffa
+    home: https://www.ortelius.io
+    icon: https://ortelius.github.io/ortelius-charts/logo.png
+    keywords:
+    - Service Catalog
+    - Microservices
+    - SBOM
+    - Supply Chain
+    - Evidence Catalog
+    name: ortelius-scec
+    type: application
+    urls:
+    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.244/ortelius-scec-11.0.244.tgz
+    version: 11.0.244
+  - apiVersion: v2
+    appVersion: 11.0.0
     created: "2023-07-12T08:53:11.461064877Z"
     dependencies:
     - name: scec-app-tag
@@ -1983,4 +2053,4 @@ entries:
     urls:
     - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.4/ortelius-scec-11.0.4.tgz
     version: 11.0.4
-generated: "2023-07-12T08:53:11.458200431Z"
+generated: "2023-07-12T14:54:45.578169297Z"
