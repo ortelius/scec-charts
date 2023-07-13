@@ -3,7 +3,7 @@ entries:
   ortelius-scec:
   - apiVersion: v2
     appVersion: 11.0.0
-    created: "2023-07-13T16:31:33.920212688Z"
+    created: "2023-07-13T16:32:38.657728371Z"
     dependencies:
     - name: scec-app-tag
       repository: https://ortelius.github.io/scec-app-tag/
@@ -40,24 +40,24 @@ entries:
       version: 11.0.71
     - name: scec-user
       repository: https://ortelius.github.io/scec-user/
-      version: 11.0.71
+      version: 11.0.72
     - name: scec-usergroup
       repository: https://ortelius.github.io/scec-usergroup/
       version: 11.0.60
     - name: scec-validate-provenance
       repository: https://ortelius.github.io/scec-validate-provenance/
-      version: 11.0.68
+      version: 11.0.70
     - name: scec-validate-signing
       repository: https://ortelius.github.io/scec-validate-signing/
       version: 11.0.60
     - name: scec-validate-user
       repository: https://ortelius.github.io/scec-validate-user/
-      version: 11.0.60
+      version: 11.0.62
     - name: scec-vulnerability
       repository: https://ortelius.github.io/scec-vulnerability/
       version: 11.0.67
     description: Ortelius v11 Supply Chain Evidence Catalog
-    digest: 72a4474439b10ce7e1f1b237f54b927284101df6af5829201a60670cf5ec519a
+    digest: 657c6df11d42a79b4e6d7033cb129e37173e5c63025256957a88d482d0e51f02
     home: https://www.ortelius.io
     icon: https://ortelius.github.io/ortelius-charts/logo.png
     keywords:
@@ -69,8 +69,8 @@ entries:
     name: ortelius-scec
     type: application
     urls:
-    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.250/ortelius-scec-11.0.250.tgz
-    version: 11.0.250
+    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.251/ortelius-scec-11.0.251.tgz
+    version: 11.0.251
   - apiVersion: v2
     appVersion: 11.0.0
     created: "2023-07-12T14:58:23.64488972Z"
@@ -2123,4 +2123,4 @@ entries:
     urls:
     - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.4/ortelius-scec-11.0.4.tgz
     version: 11.0.4
-generated: "2023-07-13T16:31:33.917360876Z"
+generated: "2023-07-13T16:32:38.654059222Z"
