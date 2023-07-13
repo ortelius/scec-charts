@@ -10,7 +10,7 @@ keywords:
 - Supply Chain
 - Evidence Catalog
 type: application
-version: 11.0.250
+version: 11.0.251
 appVersion: 11.0.0
 dependencies:
 - name: scec-app-tag
@@ -47,19 +47,19 @@ dependencies:
   version: 11.0.71
   repository: https://ortelius.github.io/scec-textfile/
 - name: scec-user
-  version: 11.0.71
+  version: 11.0.72
   repository: https://ortelius.github.io/scec-user/
 - name: scec-usergroup
   version: 11.0.60
   repository: https://ortelius.github.io/scec-usergroup/
 - name: scec-validate-provenance
-  version: 11.0.68
+  version: 11.0.70
   repository: https://ortelius.github.io/scec-validate-provenance/
 - name: scec-validate-signing
   version: 11.0.60
   repository: https://ortelius.github.io/scec-validate-signing/
 - name: scec-validate-user
-  version: 11.0.60
+  version: 11.0.62
   repository: https://ortelius.github.io/scec-validate-user/
 - name: scec-vulnerability
   version: 11.0.67
