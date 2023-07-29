@@ -3,7 +3,7 @@ entries:
   ortelius-scec:
   - apiVersion: v2
     appVersion: 11.0.0
-    created: "2023-07-29T15:44:48.862326852Z"
+    created: "2023-07-29T15:45:18.26923109Z"
     dependencies:
     - name: scec-app-tag
       repository: https://ortelius.github.io/scec-app-tag/
@@ -57,7 +57,7 @@ entries:
       repository: https://ortelius.github.io/scec-vulnerability/
       version: 11.0.80
     description: Ortelius v11 Supply Chain Evidence Catalog
-    digest: 1c1da667b35463f6068383a0f24f10ad353fa4936aa6d5c6f6a0b2fcf8ad6566
+    digest: 9dca782050d8277e60b832636191df7ebe121a7f9aa896ce42906617adf06d4c
     home: https://www.ortelius.io
     icon: https://ortelius.github.io/ortelius-charts/logo.png
     keywords:
@@ -69,8 +69,8 @@ entries:
     name: ortelius-scec
     type: application
     urls:
-    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.326/ortelius-scec-11.0.326.tgz
-    version: 11.0.326
+    - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.327/ortelius-scec-11.0.327.tgz
+    version: 11.0.327
   - apiVersion: v2
     appVersion: 11.0.0
     created: "2023-07-28T14:15:40.874325811Z"
@@ -2823,4 +2823,4 @@ entries:
     urls:
     - https://github.com/ortelius/scec-charts/releases/download/ortelius-scec-11.0.4/ortelius-scec-11.0.4.tgz
     version: 11.0.4
-generated: "2023-07-29T15:44:48.859204462Z"
+generated: "2023-07-29T15:45:18.265575734Z"
