@@ -10,57 +10,57 @@ keywords:
 - Supply Chain
 - Evidence Catalog
 type: application
-version: 11.0.331
+version: 11.0.332
 appVersion: 11.0.0
 dependencies:
 - name: scec-app-tag
-  version: 11.0.154
+  version: 11.0.156
   repository: https://ortelius.github.io/scec-app-tag/
 - name: scec-appver
-  version: 11.0.157
+  version: 11.0.158
   repository: https://ortelius.github.io/scec-appver/
 - name: scec-comp-tag
-  version: 11.0.149
+  version: 11.0.150
   repository: https://ortelius.github.io/scec-comp-tag/
 - name: scec-compver
   version: 11.0.163
   repository: https://ortelius.github.io/scec-compver/
 - name: scec-deployment
-  version: 11.0.144
+  version: 11.0.145
   repository: https://ortelius.github.io/scec-deployment/
 - name: scec-deppkg
-  version: 11.0.151
+  version: 11.0.152
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-domain
-  version: 11.0.104
+  version: 11.0.106
   repository: https://ortelius.github.io/scec-domain/
 - name: scec-environment
-  version: 11.0.163
+  version: 11.0.164
   repository: https://ortelius.github.io/scec-environment/
 - name: scec-group
-  version: 11.0.153
+  version: 11.0.154
   repository: https://ortelius.github.io/scec-group/
 - name: scec-scorecard
-  version: 11.0.147
+  version: 11.0.148
   repository: https://ortelius.github.io/scec-scorecard/
 - name: scec-textfile
-  version: 11.0.152
+  version: 11.0.153
   repository: https://ortelius.github.io/scec-textfile/
 - name: scec-user
-  version: 11.0.165
+  version: 11.0.166
   repository: https://ortelius.github.io/scec-user/
 - name: scec-usergroup
-  version: 11.0.149
+  version: 11.0.150
   repository: https://ortelius.github.io/scec-usergroup/
 - name: scec-validate-provenance
-  version: 11.0.150
+  version: 11.0.152
   repository: https://ortelius.github.io/scec-validate-provenance/
 - name: scec-validate-signing
-  version: 11.0.139
+  version: 11.0.140
   repository: https://ortelius.github.io/scec-validate-signing/
 - name: scec-validate-user
-  version: 11.0.139
+  version: 11.0.140
   repository: https://ortelius.github.io/scec-validate-user/
 - name: scec-vulnerability
-  version: 11.0.147
+  version: 11.0.148
   repository: https://ortelius.github.io/scec-vulnerability/
