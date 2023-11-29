@@ -4,22 +4,10 @@ const fs = require('fs')
 require('process')
 
 const chartRepos = [
-  'ortelius/scec-app-tag',
-  'ortelius/scec-appver',
-  'ortelius/scec-comp-tag',
   'ortelius/scec-compver',
-  'ortelius/scec-deployment',
   'ortelius/scec-deppkg',
-  'ortelius/scec-domain',
-  'ortelius/scec-environment',
-  'ortelius/scec-group',
-  'ortelius/scec-scorecard',
-  'ortelius/scec-textfile',
-  'ortelius/scec-user',
-  'ortelius/scec-usergroup',
-  'ortelius/scec-validate-provenance',
-  'ortelius/scec-validate-signing',
-  'ortelius/scec-validate-user',
+  'ortelius/scec-frontend',
+  'ortelius/scec-nginx',
   'ortelius/scec-vulnerability'
 ]
 
