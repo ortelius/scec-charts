@@ -5,27 +5,27 @@ description: Ortelius v11 Supply Chain Evidence Catalog
 home: https://www.ortelius.io
 icon: https://ortelius.github.io/ortelius-charts/logo.png
 keywords:
-  - Service Catalog
-  - Microservices
-  - SBOM
-  - Supply Chain
-  - Evidence Catalog
+- Service Catalog
+- Microservices
+- SBOM
+- Supply Chain
+- Evidence Catalog
 type: application
-version: 11.0.335
+version: 11.0.336
 appVersion: 11.0.0
 dependencies:
-  - name: scec-compver
-    version: 11.0.320
-    repository: https://ortelius.github.io/scec-compver/
-  - name: scec-deppkg
-    version: 11.0.306
-    repository: https://ortelius.github.io/scec-deppkg/
-  - name: scec-frontend
-    version: 11.0.11
-    repository: https://ortelius.github.io/scec-frontend/
-  - name: scec-nginx
-    version: 11.0.3
-    repository: https://ortelius.github.io/scec-nginx/
-  - name: scec-vulnerability
-    version: 11.0.311
-    repository: https://ortelius.github.io/scec-vulnerability/
+- name: scec-compver
+  version: 11.0.320
+  repository: https://ortelius.github.io/scec-compver/
+- name: scec-deppkg
+  version: 11.0.306
+  repository: https://ortelius.github.io/scec-deppkg/
+- name: scec-frontend
+  version: 11.0.11
+  repository: https://ortelius.github.io/scec-frontend/
+- name: scec-nginx
+  version: 11.0.3
+  repository: https://ortelius.github.io/scec-nginx/
+- name: scec-vulnerability
+  version: 11.0.311
+  repository: https://ortelius.github.io/scec-vulnerability/
