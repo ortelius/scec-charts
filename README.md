@@ -16,6 +16,6 @@ Simply update the `chartsRepo` variable in `main.js` and insert the appropriate 
 
 ```js
 const chartRepos = [
-    "ortelius/scec-domain",
+    "ortelius/scec-frontend",
 ]
 ```

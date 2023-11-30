@@ -90,7 +90,7 @@ let chartEntries = []
 let chartVersion = ''
 
 getChartEntries().then(() => {
-  const yamlOutput = createYamlOutput()
+  const yamlOutput = '---\n' + createYamlOutput()
   console.log(yamlOutput)
   fs.writeFileSync('./charts/ortelius-scec/Chart.yaml', yamlOutput, 'utf8', (err) => {
     console.log(err)
