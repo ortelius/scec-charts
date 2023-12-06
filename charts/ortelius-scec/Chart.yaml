@@ -11,7 +11,7 @@ keywords:
 - Supply Chain
 - Evidence Catalog
 type: application
-version: 11.0.345
+version: 11.0.346
 appVersion: 11.0.0
 dependencies:
 - name: scec-compver
@@ -21,10 +21,10 @@ dependencies:
   version: 11.0.307
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-frontend
-  version: 11.0.32
+  version: 11.0.36
   repository: https://ortelius.github.io/scec-frontend/
 - name: scec-nginx
-  version: 11.0.7
+  version: 11.0.8
   repository: https://ortelius.github.io/scec-nginx/
 - name: scec-vulnerability
   version: 11.0.313
