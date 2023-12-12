@@ -11,7 +11,7 @@ keywords:
 - Supply Chain
 - Evidence Catalog
 type: application
-version: 11.0.355
+version: 11.0.356
 appVersion: 11.0.0
 dependencies:
 - name: scec-compver
