@@ -9,7 +9,7 @@ on:
     branches:
       - main
     paths-ignore:
-      - "charts/**"
+      - "chart/**"
 
 permissions: # added using https://github.com/step-security/secure-repo
   contents: read
@@ -35,7 +35,7 @@ jobs:
       gh_event_name: ${{ github.event_name }}
       gh_ref: ${{ github.ref }}
       gh_handle: ${{ needs.setenv.outputs.gh_handle }}
-      chart: charts/ortelius-scec
+      chart: chart/scec-ortelius
     secrets:
       GPG_KEYRING_BASE64: ${{ secrets.GPG_KEYRING_BASE64 }}
       GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
