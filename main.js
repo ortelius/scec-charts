@@ -1,10 +1,10 @@
-const axios = require('axios');
-const { execSync } = require('child_process');
-const yaml = require('js-yaml');
-const fs = require('fs');
-const path = require('path');
-const tmp = require('tmp');
-require('process');
+const axios = require('axios')
+const { execSync } = require('child_process')
+const yaml = require('js-yaml')
+const fs = require('fs')
+const path = require('path')
+const tmp = require('tmp')
+require('process')
 
 const chartRepos = [
   'ortelius/scec-compver',
@@ -15,48 +15,47 @@ const chartRepos = [
 ]
 
 // Function to extract deployment image information
-function extractDeploymentImage(resource) {
-  const deploymentImages = [];
+function extractDeploymentImage (resource) {
+  const deploymentImages = []
 
-  if (!resource)
-   return deploymentImages;
+  if (!resource) { return deploymentImages }
 
   // Check if the resource is a Deployment
   if (resource.kind === 'Deployment' && resource.spec && resource.spec.template && resource.spec.template.spec && resource.spec.template.spec.containers) {
-      // Extract container images from the Deployment
-      const containers = resource.spec.template.spec.containers;
-      containers.forEach(container => {
-          if (container.image) {
-              deploymentImages.push(container.image);
-          }
-      });
+    // Extract container images from the Deployment
+    const containers = resource.spec.template.spec.containers
+    containers.forEach(container => {
+      if (container.image) {
+        deploymentImages.push(container.image)
+      }
+    })
   }
 
-  return deploymentImages;
+  return deploymentImages
 }
 
-function getLatestCommitSha(owner, repo, branch) {
+function getLatestCommitSha (owner, repo, branch) {
   // Create a temporary directory
-  const tempDir = tmp.dirSync().name;
+  const tempDir = tmp.dirSync().name
 
   try {
     // Clone the repository without checking out files and change to tempDir
-    process.chdir(tempDir);
-    const repoUrl = `https://github.com/${owner}/${repo}.git`;
-    console.log(repoUrl);
-    execSync(`git clone --no-checkout --branch ${branch} --depth 1 ${repoUrl} .`);
+    process.chdir(tempDir)
+    const repoUrl = `https://github.com/${owner}/${repo}.git`
+    console.log(repoUrl)
+    execSync(`git clone --no-checkout --branch ${branch} --depth 1 ${repoUrl} .`)
 
     // Get the SHA of the latest commit on the specified branch
-    const sha = execSync(`git rev-parse origin/${branch}`).toString().trim();
+    const sha = execSync(`git rev-parse origin/${branch}`).toString().trim()
 
-    return sha;
+    return sha
   } finally {
     // Change back to the original working directory
-    process.chdir(__dirname);
+    process.chdir(__dirname)
 
     // Clean up: Delete the temporary directory
     if (fs.existsSync(tempDir)) {
-      fs.rmSync(tempDir, { recursive: true });
+      fs.rmSync(tempDir, { recursive: true })
     }
   }
 }
@@ -65,9 +64,9 @@ function getLatestCommitSha(owner, repo, branch) {
 async function getChartEntries () {
   let sha = ''
 
-  sha = getLatestCommitSha("ortelius", "scec-charts", "main");
+  sha = getLatestCommitSha('ortelius', 'scec-charts', 'main')
 
-  const url = 'https://raw.githubusercontent.com/ortelius/scec-charts/' + sha + '/charts/scec-ortelius/Chart.yaml'
+  const url = 'https://raw.githubusercontent.com/ortelius/scec-charts/' + sha + '/chart/scec-ortelius/Chart.yaml'
 
   let parts = []
   let latest = ''
@@ -85,8 +84,8 @@ async function getChartEntries () {
   const latestChart = []
 
   for (let i = 0; i < chartRepos.length; i++) {
-    let [owner, repo] = chartRepos[i].split('/');
-    sha = getLatestCommitSha(owner, repo, "gh-pages");
+    const [owner, repo] = chartRepos[i].split('/')
+    sha = getLatestCommitSha(owner, repo, 'gh-pages')
 
     const repoUrl = 'https://raw.githubusercontent.com/' + chartRepos[i] + '/' + sha + '/index.yaml'
 
@@ -144,7 +143,7 @@ function createYamlOutput () {
     }
     const result = data.replace(/ORTELIUS_VERSION=\d+\.\d+\.\d+/g, 'ORTELIUS_VERSION=' + chartVersion)
 
-   // console.log(result)
+    // console.log(result)
     fs.writeFile('./chart/scec-ortelius/README.md', result, 'utf8', function (err) {
       if (err) return console.log(err)
     })
@@ -154,58 +153,56 @@ function createYamlOutput () {
 }
 // -----------------
 
-let chartEntries = [];
-let chartVersion = '';
+let chartEntries = []
+let chartVersion = ''
 
-
-const imageTags = []; // Declare imageTags outside the getChartEntries block
+const imageTags = [] // Declare imageTags outside the getChartEntries block
 
 getChartEntries().then(() => {
-  const yamlOutput = createYamlOutput();
+  const yamlOutput = createYamlOutput()
   // console.log(yamlOutput)
   fs.writeFileSync('./chart/scec-ortelius/Chart.yaml', yamlOutput, 'utf8', (err) => {
-    console.log(err);
-  });
+    console.log(err)
+  })
 
-  for (let chart of chartEntries) {
-    let repo = chart.repository.replace("https://ortelius.github.io", "https://github.com/ortelius");
-    let chartURL = repo + "releases/download/" + chart.name + "-" + chart.version + "/" + chart.name + "-" + chart.version + ".tgz";
+  for (const chart of chartEntries) {
+    const repo = chart.repository.replace('https://ortelius.github.io', 'https://github.com/ortelius')
+    const chartURL = repo + 'releases/download/' + chart.name + '-' + chart.version + '/' + chart.name + '-' + chart.version + '.tgz'
 
-    let helmTemplateOutput = '';
+    let helmTemplateOutput = ''
 
     try {
       // Execute `helm template` command and capture the output
-      helmTemplateOutput = execSync("helm template " + chartURL, { encoding: 'utf-8' });
+      helmTemplateOutput = execSync('helm template ' + chartURL, { encoding: 'utf-8' })
     } catch (error) {
       // Handle errors (you can customize this based on your requirements)
-        console.error('Error executing helm template:', error.message);
+      console.error('Error executing helm template:', error.message)
     }
 
     // Parse all YAML documents in the stream
-    const yamlDocuments = yaml.loadAll(helmTemplateOutput);
+    const yamlDocuments = yaml.loadAll(helmTemplateOutput)
 
     // Iterate over each YAML document and extract deployment images
     yamlDocuments.forEach((yamlData, index) => {
-      const deploymentImages = extractDeploymentImage(yamlData);
-      for (const i in deploymentImages)
-      {
-        img = deploymentImages[i].replace("quay.io/ortelius/", "").replaceAll(':', ';').replaceAll('.', '_').replace(/-v(?=\d)/g, ';').replace(/(\d+)-g/g, '$1_g');
-        imageTags.push('GLOBAL.Open Source.Linux Foundation.OpenSSF.Ortelius.' + img);
+      const deploymentImages = extractDeploymentImage(yamlData)
+      for (const i in deploymentImages) {
+        img = deploymentImages[i].replace('quay.io/ortelius/', '').replaceAll(':', ';').replaceAll('.', '_').replace(/-v(?=\d)/g, ';').replace(/(\d+)-g/g, '$1_g')
+        imageTags.push('GLOBAL.Open Source.Linux Foundation.OpenSSF.Ortelius.' + img)
       }
-    });
+    })
   }
 
-  const domain = 'GLOBAL.Open Source.Linux Foundation.OpenSSF.Ortelius';
-  const environment = 'ArtifactHub';
-  const application = 'scec-ortelius';
+  const domain = 'GLOBAL.Open Source.Linux Foundation.OpenSSF.Ortelius'
+  const environment = 'ArtifactHub'
+  const application = 'scec-ortelius'
 
-  let deploydata = {};
+  const deploydata = {}
 
-  deploydata['application'] = domain + '.' + application + ';' + chartVersion.replaceAll('.', '_');
-  deploydata['environment'] = domain + '.' + environment;
-  deploydata['rc'] = 0;
-  deploydata['skipdeploy'] = 'Y';
-  deploydata['compversion'] = imageTags;
+  deploydata.application = domain + '.' + application + ';' + chartVersion.replaceAll('.', '_')
+  deploydata.environment = domain + '.' + environment
+  deploydata.rc = 0
+  deploydata.skipdeploy = 'Y'
+  deploydata.compversion = imageTags
 
-  fs.writeFileSync('deploy.json', JSON.stringify(deploydata, null, 2));
-});
+  fs.writeFileSync('deploy.json', JSON.stringify(deploydata, null, 2))
+})
