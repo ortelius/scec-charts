@@ -10,6 +10,7 @@ This code takes in an array of GitHub Repos that runs the `chart-releaser` GitHu
 
 It retrieves the `index.yaml` file from the `gh-pages` branch of each repo and combines their entries into a single, consolidated `index.yaml`, enabling a poly repo chart setup to be uploaded to ArtifactHUB as one package.
 
+
 ### Usage
 
 Simply update the `chartsRepo` variable in `main.js` and insert the appropriate repo name for its `index.yaml` to be retrieved.
