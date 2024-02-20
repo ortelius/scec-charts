@@ -2,7 +2,6 @@ const axios = require('axios')
 const { execSync } = require('child_process')
 const yaml = require('js-yaml')
 const fs = require('fs')
-const path = require('path')
 const tmp = require('tmp')
 require('process')
 
@@ -137,7 +136,7 @@ function createYamlOutput () {
 
   output = output.replace('|-', '|')
 
-  fs.readFile('./chart/ortelius/README.md', 'utf8', function (err, data) {
+  fs.readFile('./chart/scec-ortelius/README.md', 'utf8', function (err, data) {
     if (err) {
       return console.log(err)
     }
@@ -186,7 +185,7 @@ getChartEntries().then(() => {
     yamlDocuments.forEach((yamlData, index) => {
       const deploymentImages = extractDeploymentImage(yamlData)
       for (const i in deploymentImages) {
-        img = deploymentImages[i].replace('quay.io/ortelius/', '').replaceAll(':', ';').replaceAll('.', '_').replace(/-v(?=\d)/g, ';').replace(/(\d+)-g/g, '$1_g')
+        const img = deploymentImages[i].replace('quay.io/ortelius/', '').replaceAll(':', ';').replaceAll('.', '_').replace(/-v(?=\d)/g, ';').replace(/(\d+)-g/g, '$1_g')
         imageTags.push('GLOBAL.Open Source.Linux Foundation.OpenSSF.Ortelius.' + img)
       }
     })
