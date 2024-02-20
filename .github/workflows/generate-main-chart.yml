@@ -1,6 +1,9 @@
 name: Generate Main Charts
 
 on:
+  repository_dispatch:
+    types:
+      - generate-main-chart
   workflow_dispatch:
   push:
     branches:
