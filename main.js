@@ -10,7 +10,9 @@ const chartRepos = [
   'ortelius/scec-deppkg',
   'ortelius/scec-frontend',
   'ortelius/scec-nginx',
-  'ortelius/scec-vulnerability'
+  'ortelius/scec-vulnerability',
+  'ortelius/scec-mitre-mapping',
+  'ortelius/scec-arangodb'
 ]
 
 // Function to extract deployment image information
