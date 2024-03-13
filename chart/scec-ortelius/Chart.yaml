@@ -10,7 +10,7 @@ keywords:
 - Supply Chain
 - Evidence Catalog
 type: application
-version: 11.0.706
+version: 11.0.707
 appVersion: 11.0.0
 annotations:
   artifacthub.io/signKey: |
@@ -36,5 +36,5 @@ dependencies:
   version: 11.0.35
   repository: https://ortelius.github.io/scec-mitre-mapping/
 - name: scec-arangodb
-  version: 11.0.8
+  version: 11.0.2
   repository: https://ortelius.github.io/scec-arangodb/
