@@ -174,7 +174,7 @@ getChartEntries().then(() => {
 
     try {
       // Execute `helm template` command and capture the output
-      helmTemplateOutput = execSync('helm template ' + chartURL, { encoding: 'utf-8' })
+      helmTemplateOutput = execSync('helm template --set global.arangodb.enabled=true ' + chartURL, { encoding: 'utf-8' })
     } catch (error) {
       // Handle errors (you can customize this based on your requirements)
       console.error('Error executing helm template:', error.message)
