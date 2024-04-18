@@ -3998,7 +3998,7 @@ entries:
         url: https://ortelius.io/ortelius.key
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2024-04-18T17:03:28.076687034Z"
+    created: "2024-04-18T17:03:46.069208988Z"
     dependencies:
     - name: scec-compver
       repository: https://ortelius.github.io/scec-compver/
@@ -4022,7 +4022,7 @@ entries:
       repository: https://ortelius.github.io/scec-arangodb/
       version: 11.0.3
     description: Ortelius v11 Supply Chain Evidence Catalog
-    digest: 34435edf8207770b2e050f03a9d7ef0a61b988d829ee0437340619aba3ce8cd5
+    digest: d90a564ecdb32fd9e83b3a4246494b5b2b4e5f648931a1b104bb64fdf777e19a
     home: https://www.ortelius.io
     icon: https://ortelius.github.io/ortelius-charts/logo.png
     keywords:
@@ -4034,8 +4034,8 @@ entries:
     name: scec-ortelius
     type: application
     urls:
-    - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.1184/scec-ortelius-11.0.1184.tgz
-    version: 11.0.1184
+    - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.1185/scec-ortelius-11.0.1185.tgz
+    version: 11.0.1185
   - annotations:
       artifacthub.io/signKey: |
         fingerprint: 115D42896E81EA5F774C5CDC7F398DEBAA126EB9
@@ -28338,4 +28338,4 @@ entries:
     urls:
     - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.359/scec-ortelius-11.0.359.tgz
     version: 11.0.359
-generated: "2024-04-18T17:03:28.075418304Z"
+generated: "2024-04-18T17:03:46.067955071Z"
