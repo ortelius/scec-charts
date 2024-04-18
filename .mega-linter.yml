@@ -5,6 +5,8 @@ APPLY_FIXES: all # all, none, or list of linter keys
 
 SHOW_ELAPSED_TIME: true
 FILEIO_REPORTER: false
+YAML_PRETTIER_FILTER_REGEX_EXCLUDE: templates/
+YAML_YAMLLINT_FILTER_REGEX_EXCLUDE: templates/
 DISABLE_LINTERS:
   - REPOSITORY_DUSTILOCK
   - REPOSITORY_GIT_DIFF
@@ -17,7 +19,7 @@ DISABLE:
   - SPELL
 
 GO_GOLANGCI_LINT_CLI_LINT_MODE: project
-
+GO_GOLANGCI_LINT_ARGUMENTS: --timeout 10m
 PRE_COMMANDS:
   [
     "command": "wget https://go.dev/dl/go1.22.2.linux-amd64.tar.gz",
