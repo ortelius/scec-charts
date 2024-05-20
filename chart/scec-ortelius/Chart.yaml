@@ -10,7 +10,7 @@ keywords:
 - Supply Chain
 - Evidence Catalog
 type: application
-version: 11.0.1572
+version: 11.0.1573
 appVersion: 11.0.0
 annotations:
   artifacthub.io/signKey: |
