@@ -10,7 +10,7 @@ keywords:
 - Supply Chain
 - Evidence Catalog
 type: application
-version: 11.0.1706
+version: 11.0.1707
 appVersion: 11.0.0
 annotations:
   artifacthub.io/signKey: |
@@ -18,7 +18,7 @@ annotations:
     url: https://ortelius.io/ortelius.key
 dependencies:
 - name: scec-compver
-  version: 11.0.613
+  version: 11.0.615
   repository: https://ortelius.github.io/scec-compver/
 - name: scec-deppkg
   version: 11.0.621
