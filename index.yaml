@@ -3998,6 +3998,50 @@ entries:
         url: https://ortelius.io/ortelius.key
     apiVersion: v2
     appVersion: 11.0.0
+    created: "2024-08-07T02:44:10.71542525Z"
+    dependencies:
+    - name: scec-compver
+      repository: https://ortelius.github.io/scec-compver/
+      version: 11.0.713
+    - name: scec-deppkg
+      repository: https://ortelius.github.io/scec-deppkg/
+      version: 11.0.727
+    - name: scec-frontend
+      repository: https://ortelius.github.io/scec-frontend/
+      version: 11.0.583
+    - name: scec-nginx
+      repository: https://ortelius.github.io/scec-nginx/
+      version: 11.0.189
+    - name: scec-vulnerability
+      repository: https://ortelius.github.io/scec-vulnerability/
+      version: 11.0.684
+    - name: scec-mitre-mapping
+      repository: https://ortelius.github.io/scec-mitre-mapping/
+      version: 11.0.212
+    - name: scec-arangodb
+      repository: https://ortelius.github.io/scec-arangodb/
+      version: 11.0.3
+    description: Ortelius v11 Supply Chain Evidence Catalog
+    digest: a3d112de0ab46ea10fba2831db1054543d16d983171992290e1c2c538fc70564
+    home: https://www.ortelius.io
+    icon: https://ortelius.github.io/ortelius-charts/logo.png
+    keywords:
+    - Service Catalog
+    - Microservices
+    - SBOM
+    - Supply Chain
+    - Evidence Catalog
+    name: scec-ortelius
+    type: application
+    urls:
+    - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.2458/scec-ortelius-11.0.2458.tgz
+    version: 11.0.2458
+  - annotations:
+      artifacthub.io/signKey: |
+        fingerprint: 115D42896E81EA5F774C5CDC7F398DEBAA126EB9
+        url: https://ortelius.io/ortelius.key
+    apiVersion: v2
+    appVersion: 11.0.0
     created: "2024-08-07T02:35:40.215017112Z"
     dependencies:
     - name: scec-compver
@@ -64946,4 +64990,4 @@ entries:
     urls:
     - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.359/scec-ortelius-11.0.359.tgz
     version: 11.0.359
-generated: "2024-08-07T02:35:40.212642746Z"
+generated: "2024-08-07T02:44:10.713246395Z"
