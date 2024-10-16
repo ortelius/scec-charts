@@ -10,7 +10,7 @@ keywords:
 - Supply Chain
 - Evidence Catalog
 type: application
-version: 11.0.3456
+version: 11.0.3457
 appVersion: 11.0.0
 annotations:
   artifacthub.io/signKey: |
@@ -24,13 +24,13 @@ dependencies:
   version: 11.0.836
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-frontend
-  version: 11.0.729
+  version: 11.0.731
   repository: https://ortelius.github.io/scec-frontend/
 - name: scec-nginx
   version: 11.0.249
   repository: https://ortelius.github.io/scec-nginx/
 - name: scec-vulnerability
-  version: 11.0.813
+  version: 11.0.815
   repository: https://ortelius.github.io/scec-vulnerability/
 - name: scec-mitre-mapping
   version: 11.0.311
