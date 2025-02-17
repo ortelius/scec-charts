@@ -3998,7 +3998,7 @@ entries:
         url: https://ortelius.io/ortelius.key
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2025-02-17T19:24:55.162637208Z"
+    created: "2025-02-17T19:29:02.341729538Z"
     dependencies:
     - name: scec-compver
       repository: https://ortelius.github.io/scec-compver/
@@ -4022,7 +4022,7 @@ entries:
       repository: https://ortelius.github.io/scec-arangodb/
       version: 11.0.3
     description: Ortelius v11 Supply Chain Evidence Catalog
-    digest: 149b35bfd7aef4e6562f6022ad84941ce9f48eae05969e6daebc4429e1b4ae68
+    digest: 271a35b3fa76a07059c6ad51fc3fda3b1ec16c6fe06106fb5e52198c0896e60a
     home: https://www.ortelius.io
     icon: https://ortelius.github.io/ortelius-charts/logo.png
     keywords:
@@ -4034,15 +4034,15 @@ entries:
     name: scec-ortelius
     type: application
     urls:
-    - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.4127/scec-ortelius-11.0.4127.tgz
-    version: 11.0.4127
+    - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.4128/scec-ortelius-11.0.4128.tgz
+    version: 11.0.4128
   - annotations:
       artifacthub.io/signKey: |
         fingerprint: 115D42896E81EA5F774C5CDC7F398DEBAA126EB9
         url: https://ortelius.io/ortelius.key
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2025-02-17T19:18:29.560570788Z"
+    created: "2025-02-17T19:21:51.362788928Z"
     dependencies:
     - name: scec-compver
       repository: https://ortelius.github.io/scec-compver/
@@ -4066,7 +4066,7 @@ entries:
       repository: https://ortelius.github.io/scec-arangodb/
       version: 11.0.3
     description: Ortelius v11 Supply Chain Evidence Catalog
-    digest: 91357e42572da54b388b84068bdfff89e6e9499243a9fca1179e930e7fba1482
+    digest: 7db41feb1fb78c9853f22d17c1d0871b1db1a9d1b3521539a0613ffa197bef47
     home: https://www.ortelius.io
     icon: https://ortelius.github.io/ortelius-charts/logo.png
     keywords:
@@ -4078,19 +4078,19 @@ entries:
     name: scec-ortelius
     type: application
     urls:
-    - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.4124/scec-ortelius-11.0.4124.tgz
-    version: 11.0.4124
+    - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.4126/scec-ortelius-11.0.4126.tgz
+    version: 11.0.4126
   - annotations:
       artifacthub.io/signKey: |
         fingerprint: 115D42896E81EA5F774C5CDC7F398DEBAA126EB9
         url: https://ortelius.io/ortelius.key
     apiVersion: v2
     appVersion: 11.0.0
-    created: "2025-02-17T19:12:05.155471268Z"
+    created: "2025-02-17T19:15:42.025231509Z"
     dependencies:
     - name: scec-compver
       repository: https://ortelius.github.io/scec-compver/
-      version: 11.0.923
+      version: 11.0.925
     - name: scec-deppkg
       repository: https://ortelius.github.io/scec-deppkg/
       version: 11.0.952
@@ -4110,7 +4110,7 @@ entries:
       repository: https://ortelius.github.io/scec-arangodb/
       version: 11.0.3
     description: Ortelius v11 Supply Chain Evidence Catalog
-    digest: 1430b7490b1c619bff4572223810c71ba2c842cb760e8b9c02725bbb83aa6b39
+    digest: 6c73415444aa2d81172b31950e1fd74d98580f80264c0071ad973af14448beaf
     home: https://www.ortelius.io
     icon: https://ortelius.github.io/ortelius-charts/logo.png
     keywords:
@@ -4122,8 +4122,8 @@ entries:
     name: scec-ortelius
     type: application
     urls:
-    - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.4116/scec-ortelius-11.0.4116.tgz
-    version: 11.0.4116
+    - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.4119/scec-ortelius-11.0.4119.tgz
+    version: 11.0.4119
   - annotations:
       artifacthub.io/signKey: |
         fingerprint: 115D42896E81EA5F774C5CDC7F398DEBAA126EB9
@@ -113258,4 +113258,4 @@ entries:
     urls:
     - https://github.com/ortelius/scec-charts/releases/download/scec-ortelius-11.0.359/scec-ortelius-11.0.359.tgz
     version: 11.0.359
-generated: "2025-02-17T19:24:55.161203186Z"
+generated: "2025-02-17T19:29:02.340403255Z"
